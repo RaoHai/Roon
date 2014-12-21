@@ -111,6 +111,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     font-style: italic
 }
 
+
+@font-face {
+    font-family: 'TitleFont';
+    src: url('/assets/fonts/TitleFont.eot?') format('eot'), 
+         url('/assets/fonts/TitleFont.otf')  format('opentype'),
+         url('/assets/fonts/TitleFont.woff') format('woff'), 
+         url('/assets/fonts/TitleFont.ttf')  format('truetype'),
+         url('/assets/fonts/TitleFont.svg#TitleFont') format('svg');
+}
+
+
+
+@font-face {
+  font-family: 'Noto Serif';
+  src: url('/assets/fonts/NotoSerif.eot?#iefix') format('embedded-opentype'),  url('/assets/fonts/NotoSerif.woff') format('woff'), url('/assets/fonts/NotoSerif.ttf')  format('truetype'), url('/assets/fonts/NotoSerif.svg#NotoSerif') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/assets/fonts/OpenSans.eot?#iefix') format('embedded-opentype'),  url('/assets/fonts/OpenSans.woff') format('woff'), url('/assets/fonts/OpenSans.ttf')  format('truetype'), url('/assets/fonts/OpenSans.svg#OpenSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Mono'), local('UbuntuMono-Regular'), url('/assets/fonts/Ubuntu-mono.woff') format('woff');
+}
+
 body {
     font-family: "Gibson", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
 }
@@ -1026,7 +1060,8 @@ body.user article .text {
     max-width: 680px
 }
 body.user article .text p {
-    display: inline;
+    text-indent: 2em;
+    display: block;
     line-height: 1.7em;
     margin: 0 5px 0 0
 }
@@ -1781,4 +1816,56 @@ body.touch.user article .readmore {
         background-image: url(https://roon-assets.s3.amazonaws.com/assets/image-loading-light@2x-5d07f26751af5a375b5e517559fa9f29.gif);
         background-size: 34px 34px
     }
+}
+
+
+
+
+/* Tomorrow Night Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+.tomorrow-comment, pre .comment, pre .title {
+  color: #969896;
+}
+
+.tomorrow-red, pre .variable, pre .attribute, pre .tag, pre .regexp, pre .ruby .constant, pre .xml .tag .title, pre .xml .pi, pre .xml .doctype, pre .html .doctype, pre .css .id, pre .css .class, pre .css .pseudo {
+  color: #cc6666;
+}
+
+.tomorrow-orange, pre .number, pre .preprocessor, pre .built_in, pre .literal, pre .params, pre .constant {
+  color: #de935f;
+}
+
+.tomorrow-yellow, pre .class, pre .ruby .class .title, pre .css .rules .attribute {
+  color: #f0c674;
+}
+
+.tomorrow-green, pre .string, pre .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata {
+  color: #b5bd68;
+}
+
+.tomorrow-aqua, pre .css .hexcolor {
+  color: #8abeb7;
+}
+
+.tomorrow-blue, pre .function, pre .python .decorator, pre .python .title, pre .ruby .function .title, pre .ruby .title .keyword, pre .perl .sub, pre .javascript .title, pre .coffeescript .title {
+  color: #81a2be;
+}
+
+.tomorrow-purple, pre .keyword, pre .javascript .function {
+  color: #b294bb;
+}
+
+article .text pre {
+    padding: 0;
+}
+pre code , article .text pre code{
+  display: block;
+  background: #1d1f21;
+  color: #c5c8c6;
+  font-family: Menlo, Monaco, Consolas, monospace;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  padding: 10px;
 }
