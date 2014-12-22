@@ -15,6 +15,7 @@
     <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
 
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
@@ -116,13 +117,7 @@
 
 </body>
 
-<script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
-    <script type="text/javascript" src="{{asset "js/highlight.pack.js"}}"></script>
-     <script>
-        $(function(){
-
-            hljs.initHighlightingOnLoad();
-        });
-    </script> 
+    <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
 </html>
