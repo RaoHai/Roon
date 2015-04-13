@@ -152,7 +152,7 @@ body .btn, body>header h1, body article header h1, body>footer .details h4, body
     font-family: "Gibson", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
 }
 body article time, body article>.meta, body article>header .count, body article>footer, body article>footer h4, body article .text, body article .text blockquote {
-    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, Verdana, 'Lantinghei TC', 'Hiragino Kaku Gothic ProN', 'Heiti TC', 'MS Mincho', MingLiU, sans-serif;
 }
 body.serif {
     font-family: "FiloPro", "Georgia", "Times New Roman", serif
